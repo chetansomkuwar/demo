@@ -1,12 +1,8 @@
-- name: Test Ansible issue
-  gather_facts: False
-  hosts: localhost
+- name: Playbook1
+  hosts: all
+  vars: 
+    URL: cloudblitz.in
   tasks:
-    - name: Print single message
-      debug:
-        msg: 'Welcome to the world of Ansible'
-
-    - name: Print multiple messages at once
-      debug:
-        msg:
-          - 'Welcome to the world of Ansible'
+  - name: Print messages_1
+    debug:
+      msg: "{{URL}}"
