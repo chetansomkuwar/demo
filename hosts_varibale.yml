@@ -1,16 +1,12 @@
-- name: Playbook1
+- name: playbook1
   hosts: localhost
-  # vars_files: url.yml
-  # vars: 
-  #   URL: cloudblitz.in
+  
+  # vars:
+  #  URL: global.com
+  # vars_files: varfile.yml
   tasks:
-
-  - name: Print messages_1
+  - name: print message_1
     debug:
-      msg: "{{URL}}"
-
-  # - name: Print messages_2
-  #   debug:
-  #     msg: "{{URL}}"    
-  #   vars:
-  #     URL: cloudblitz.in/aws
+     msg: "{{URL}}"
+  #vars:
+   #URL: local.com
