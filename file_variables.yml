@@ -1,0 +1,10 @@
+- name: Playbook1
+  hosts: all
+  vars_files: jarvisfile.yml
+  # vars: 
+  #   URL: cloudblitz.in
+  tasks:
+
+  - name: Print messages_1
+    debug:
+      msg: "{{URL}}"
