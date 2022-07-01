@@ -9,7 +9,7 @@
     - name: URL
       prompt: "Enter Anything"
       private: no
-      # private for URL hidden
+      # private for hidden text fields
 
   tasks:
     - name: Print messages_2
