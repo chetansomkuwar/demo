@@ -1,6 +1,6 @@
 - name: playbook1
   hosts: localhost
-  
+
   # vars:
   #  URL: global.com
   # vars_files: varfile.yml
