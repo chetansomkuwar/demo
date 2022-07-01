@@ -1,8 +1,7 @@
 - name: Playbook1
   hosts: localhost
   vars_files: jarvisfile.yml
-  # vars: 
-  #   URL: cloudblitz.in
+
   tasks:
 
   - name: Print messages_1
