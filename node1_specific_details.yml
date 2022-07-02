@@ -2,5 +2,5 @@
   hosts: all
   tasks:
     -name: print messages_1
-    debug:
-      msg: "ansible_architecture"
+     debug:
+      msg: "node1 architecture: {{ansible_architecture}}"
