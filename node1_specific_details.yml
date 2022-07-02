@@ -9,4 +9,4 @@
   #belowed one for multiple key and it's details
     - name: print messages_2
       debug:
-       msg: "multiple keys and it's details:{{ansible_userspace_architecture.ansible_product_version}}"
+       msg: "multiple keys and it's details:{{mount.size_available}}"
