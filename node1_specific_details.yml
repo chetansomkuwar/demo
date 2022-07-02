@@ -10,4 +10,6 @@
     - name: print messages_2
       debug:
        msg: "multiple keys and it's details:{{ansible_env.LOGNAME}}"
-       
+
+
+      #note:- o/p= it shows content and its sub-content
