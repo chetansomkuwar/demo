@@ -1,0 +1,6 @@
+- name: playbook1
+  hosts: all
+  tasks:
+    -name: print messages_1
+    debug:
+      msg: "ansible_architecture"
