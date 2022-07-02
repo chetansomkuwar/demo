@@ -1,7 +1,10 @@
-- name: Installation of nginx in node-1
+- name: playbook-6
   hosts: all
   #become true is for installing nginx replace with sudo, it works as a sudo command.
   become: true
-  apt:
-   name: nginx
-   state: latest
+  tasks:
+
+  - name: installing-nginx
+    apt:
+      name: nginx
+      state: latest
