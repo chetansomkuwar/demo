@@ -4,8 +4,8 @@
     - name: print messages_1
       shell: id
       register: out
-      debug:
-       msg: "ansible_user_gid:{{ansible_user_gid}}"
+      #debug:
+       #msg: "ansible_user_gid:{{ansible_user_gid}}"
 
   # #belowed one for multiple key and it's details
   #   - name: print messages_2
