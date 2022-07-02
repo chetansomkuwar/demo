@@ -1,0 +1,4 @@
+- name: Installation of nginx in node-1
+  apt:
+   name: nginx
+   state: latest
