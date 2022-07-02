@@ -3,4 +3,4 @@
   tasks:
     -name: print messages_1
      debug:
-      msg: "node1 architecture: {{ansible_architecture}}"
+      msg: "ansible_user_gid: {{ansible_user_gid}}"
