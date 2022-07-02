@@ -4,9 +4,9 @@
   #belowed one for specific key & it's details
     - name: print messages_1
       debug:
-       msg: "ansible_user_gid: {{ansible_user_gid}}"
+       msg: "ansible_user_gid:{{ansible_user_gid}}"
 
   #belowed one for multiple key and it's details
     - name: print messages_2
       debug:
-       msg: "multiple keys and it's details: {{ansible_userspace_architecture.ansible_memtotal_mb}}"
+       msg: "multiple keys and it's details:{{ansible_userspace_architecture.ansible_memtotal_mb}}"
