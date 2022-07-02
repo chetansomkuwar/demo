@@ -4,16 +4,10 @@
     - name: print messages_1
       shell: id
       register: out
-# shell id  & resgister out is only for "shell id saving in register"     
+#Note:- shell id  & resgister out is only for "shell id saving in register"     
     
     - name: print shell id & resgister out is only for "shell id saving in register" 
       debug:
        msg: "my user id is {{out}}"
-
-  # #belowed one for multiple key and it's details
-  #   - name: print messages_2
-  #     debug:
-  #      msg: "multiple keys and it's details:{{ansible_env.LOGNAME}}"
-
-
-  #     #note:- o/p= it shows content and its sub-content (key & it's values)
+#Note:- to print shell id & resgister out is only for "shell id saving in register
+ 
