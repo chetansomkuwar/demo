@@ -9,4 +9,4 @@
   #belowed one for multiple key and it's details
     - name: print messages_2
       debug:
-       msg: "multiple keys and it's details: {{ansible_user_id.ansible_userspace_architecture}}"
+       msg: "multiple keys and it's details: {{ansible_userspace_architecture}}"
