@@ -1,5 +1,7 @@
 - name: Installation of nginx in node-1
   hosts: all
+  #become true is for installing nginx replace with sudo, it works as a sudo command.
+  becomes: true
   apt:
    name: nginx
    state: latest
