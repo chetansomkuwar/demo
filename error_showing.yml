@@ -2,7 +2,7 @@
   hosts: all
   tasks:
   #it shows error in output when running commands
-  #gather_facts: no
+  gather_facts: no
   #belowed one for specific key & it's details
     - name: print messages_1
       debug:
