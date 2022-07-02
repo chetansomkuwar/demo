@@ -1,6 +1,6 @@
 - name: playbook-6
   hosts: all
-  #become true is for installing nginx replace with sudo, it works as a sudo command.
+
   become: true
   tasks:
 
@@ -8,3 +8,8 @@
     apt:
        name: nginx
        state: latest
+
+
+#Note:-#become true is for installing nginx replace with sudo, it works as a sudo command.
+
+#  get ssh of node-1 and check if NGINX is running or not "systemctl status nginx"
