@@ -1,6 +1,6 @@
 - name: playbook1
   hosts: all
   tasks:
-    -name: print messages_1
-     debug:
-      msg: "ansible_user_gid: {{ansible_user_gid}}"
+    - name: print messages_1
+      debug:
+       msg: "ansible_user_gid: {{ansible_user_gid}}"
