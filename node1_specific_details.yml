@@ -12,4 +12,4 @@
        msg: "multiple keys and it's details:{{ansible_env.LOGNAME}}"
 
 
-      #note:- o/p= it shows content and its sub-content
+      #note:- o/p= it shows content and its sub-content (key & it's values)
