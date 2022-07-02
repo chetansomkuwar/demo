@@ -1,12 +1,8 @@
 - name: playbook1
-  hosts: localhost
+  hosts: all
 
-  # vars:
-  #  URL: global.com
-  # vars_files: varfile.yml
+
   tasks:
   - name: print message_1
     debug:
      msg: "{{URL}}"
-  #vars:
-   #URL: local.com
