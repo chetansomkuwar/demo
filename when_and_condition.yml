@@ -1,0 +1,10 @@
+- name: simple when condition
+  hosts: all
+  become: true
+  tasks:
+    - name: print the task
+      debug:
+       msg: "Distribution name of Linux: {{ansible_distribution}}"
+      when: ansible_distribution == "centos" and ansible_distribution == "ubuntu"
+
+# in "and condition" if any of the give 2 condiion when 1 condition will be false then whole task will be skipped
