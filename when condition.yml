@@ -1,6 +1,6 @@
 #we use "when" condition if we don't want other task to get cancelled, just because the problem in single task execution.
 
-- name: simple when condition
+- name: simple condition
   hosts: all
   become: true
   tasks:
