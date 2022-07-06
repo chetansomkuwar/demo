@@ -3,13 +3,13 @@
   become: true
   tasks:
 
-  
+
    - name: package instllation via loop modules
      apt:
        name: "{{item}}"
        state: latest
      loop: 
-       - httpd
+       - apache2
        - nginx
 
 
