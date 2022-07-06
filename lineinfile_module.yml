@@ -1,0 +1,10 @@
+---
+- name: playbook for lineinfileModule
+  hosts: all
+  become: true
+  tasks:
+    - name: allow password authentication in nodes
+      ansible.builtin:lineinfile:
+        state: present
+        dest: /etc/ssh/sshd_config
+        line: PasswordAuthentication yes
