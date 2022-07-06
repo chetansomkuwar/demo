@@ -2,14 +2,14 @@
   hosts: all
   become: true
   tasks:
-  apt:
 
-    - name: package instllation via loop modules
-      apt:
-        name: "{{item}}"
-        state: latest
-      loop: 
-        - httpd
-        - nginx
-            
+  
+   - name: package instllation via loop modules
+     apt:
+       name: "{{item}}"
+       state: latest
+     loop: 
+       - httpd
+       - nginx
+
 
