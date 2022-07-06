@@ -2,7 +2,7 @@
   hosts: all
   become: true
   vars:
-    Hellow Avengers: rupam hai kahi dhoop zindagi, har pal yaha ji bhar jiyo, jo hai sama kl ho na ho....  # mention in file by: {{}}
+    hellow Avengers: rupam hai kahi dhoop  # mention in file by: {{}}
   tasks:
 
     - name: copy data from source to destinationn
