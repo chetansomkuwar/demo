@@ -5,7 +5,7 @@
     Hellow Avengers: rupam hai kahi dhoop zindagi, har pal yaha ji bhar jiyo, jo hai sama kl ho na ho....  # mention in file by: {{}}
   tasks:
 
-    - name: copy data from source to destination
+    - name: copy data from source to destinationn
       template: 
         src: pravin.yml
         dest: /mnt/somkuwar.txt
