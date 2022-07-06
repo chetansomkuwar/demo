@@ -1,13 +1,13 @@
+#we use "when" condition if we don't want other task to get cancelled, just because the problem in single task execution.
 
-
-- name: simple condition
+- name: simple when condition
   hosts: all
   become: true
   tasks:
     - name: print the task
       debug:
        msg: "Distribution name of Linux: {{ansible_distribution}}"
-     
+      when: ansible_distribution == "centos"
 
     - name: print any messages_1
       debug:
