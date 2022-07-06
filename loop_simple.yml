@@ -1,0 +1,11 @@
+- name: simple loop conditions
+  hosts: all
+  tasks:
+  
+    - name: simple loop conditions print messages_1
+      debug:
+        msg: "print city name: {{item}}"
+      loop:
+        - nagpur
+        - pune
+        - mumbai
