@@ -1,0 +1,8 @@
+- name: simple when condition
+  hosts: all
+  become: true
+  tasks:
+    - name: print the task
+      debug:
+       msg: "Distribution name of Linux: {{ansible_distribution}}"
+      when: ansible_distribution == "centos" or ansible_distribution == "ubuntu"
