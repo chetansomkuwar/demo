@@ -1,0 +1,9 @@
+- name: playbook1 for w/o yum & apt
+  hosts: all
+  become: true
+  tasks: 
+    - name: instllating packages without downloading tools
+      package:  
+        name: nginx
+        state: present
+  
