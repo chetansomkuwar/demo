@@ -1,0 +1,9 @@
+- name: setfacts_playbook
+  hosts: all
+  tasks:
+    - name: set fact
+      set_fact: URL=["www.jarvis.com","www.chetan.com"] city="nagpur"
+
+    - name: print variable
+      debug:
+        msg: "{{URL}}  {{city}}"
