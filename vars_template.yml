@@ -2,7 +2,7 @@
   hosts: all
   become: true
   vars:
-    hello avengers: "writeanythig" 
+    hello: "writeanythig" 
   tasks:
 
     - name: copy data from source to destinationn
