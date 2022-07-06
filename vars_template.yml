@@ -2,10 +2,10 @@
   hosts: all
   become: true
   vars:
-    demo: pravin.yml  # mention in file by: {{}}
+    Hellow Avengers: rupam hai kahi dhoop zindagi, har pal yaha ji bhar jiyo, jo hai sama kl ho na ho....  # mention in file by: {{}}
   tasks:
 
     - name: copy data from source to destination
       template: 
         src: pravin.yml
-        dest: /mnt/pravin.txt
+        dest: /mnt/somkuwar.txt
