@@ -9,7 +9,7 @@
        name: "{{item}}"
        state: latest
      loop: 
-       - apache2
+       - apache
        - nginx
 
 
