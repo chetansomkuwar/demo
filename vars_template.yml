@@ -3,6 +3,7 @@
   become: true
   vars:
     hello: "writeanythig" 
+  #note:- In pravin.yml file {{}} only one word will take 
   tasks:
 
     - name: copy data from source to destinationn
