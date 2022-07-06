@@ -3,10 +3,16 @@
   hosts: all
   become: true
   tasks:
-      - name: allow password authentication in nodes
-        ansible.builtin.lineinfile:
-          state: present
-          dest: /etc/ssh/sshd_config
-          regexp: '^PasswordAuthentication'
-          line: "PasswordAuthentication yes"
-          validate: 'sshd -t -f %s'
+      # - name: allow password authentication in nodes
+      #   ansible.builtin.lineinfile:
+      #     state: present
+      #     dest: /etc/ssh/sshd_config
+      #     regexp: '^PasswordAuthentication'
+      #     line: "PasswordAuthentication yes"
+      #     validate: 'sshd -t -f %s'
+
+      - name: new task for file adding and it content
+        lineinfile: 
+          state: present    
+          dest: /mnt/spider.txt
+          line: hello spider
