@@ -3,14 +3,9 @@
   hosts: all
   become: true
   tasks:
-
-      - name: instllating packages without downloading tools
-        package:  
-          name: ssh
-          state: present
-
       - name: allow password authentication in nodes
-        ansible:
+        ansible.builtin.lineinfile:
           state: present
           dest: /etc/ssh/sshd_config
           line: PasswordAuthentication yes
+          validate: 'sshd -t -f %s'
