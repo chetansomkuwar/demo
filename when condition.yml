@@ -6,7 +6,7 @@
   tasks:
     - name: print the task
       debug:
-       msg: "Distribution name of Linux: {{ansible_distributio}}"
+       msg: "Distribution name of Linux: {{ansible_distribution}}"
       #when: ansible_distribution == "centos"
 
     - name: print any messages_1
