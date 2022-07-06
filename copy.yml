@@ -1,0 +1,8 @@
+- name: playbook for copy data from ansible-server to nodes
+  hosts: all
+  tasks:
+
+    - name: copy data from source to destination
+      copy: 
+        src: ansible.cfg
+        dest: /mnt/spider.txt
