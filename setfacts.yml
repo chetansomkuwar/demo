@@ -2,8 +2,11 @@
   hosts: all
   tasks:
     - name: set fact
-      set_fact: URL=["www.jarvis.com","www.chetan.com"] city="nagpur"
+      set_fact: URL=["www.jarvis.com","www.chetan.com","www.rupam.com"] city="nagpur"
 
     - name: print variable
       debug:
         msg: "{{URL}}  {{city}}"
+
+
+#note:- it will merge two variables into 1 variable + city = all content merge in single line
