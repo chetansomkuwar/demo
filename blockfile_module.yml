@@ -7,3 +7,4 @@
         create: yes
         block: |
           hello girish bhau
+#note:- content unser the block will copy in nodes.
