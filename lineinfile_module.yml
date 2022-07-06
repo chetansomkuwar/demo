@@ -7,5 +7,6 @@
         ansible.builtin.lineinfile:
           state: present
           dest: /etc/ssh/sshd_config
-          line: PasswordAuthentication yes
+          regexp: '^PasswordAuthentication'
+          line: "PasswordAuthentication yes"
           validate: 'sshd -t -f %s'
