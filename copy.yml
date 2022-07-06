@@ -1,5 +1,6 @@
 - name: playbook for copy data from ansible-server to nodes
   hosts: all
+  become: true
   tasks:
 
     - name: copy data from source to destination
