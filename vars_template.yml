@@ -2,7 +2,7 @@
   hosts: all
   become: true
   vars:
-    hellow Avengers: rupam hai kahi dhoop  # mention in file by: {{}}
+    hello Avengers: writeanythig 
   tasks:
 
     - name: copy data from source to destinationn
