@@ -1,0 +1,11 @@
+- name: playbook for copy data from ansible-server to nodes
+  hosts: all
+  become: true
+  vars:
+    demo: pravin.yml  # mention in file by: {{}}
+  tasks:
+
+    - name: copy data from source to destination
+      template: 
+        src: pravin.yml
+        dest: /mnt/pravin.txt
