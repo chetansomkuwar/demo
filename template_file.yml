@@ -1,9 +1,11 @@
 - name: playbook for copy data from ansible-server to nodes
   hosts: all
   become: true
+  # vars:
+  #   demo: <variable name>  # mention in file by: {{}}
   tasks:
 
     - name: copy data from source to destination
       copy: 
-        src: loop.cfg
+        src: jarvisfile.yml
         dest: /mnt/rupam.txt
