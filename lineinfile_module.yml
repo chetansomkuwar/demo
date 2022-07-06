@@ -3,8 +3,13 @@
   hosts: all
   become: true
   tasks:
-  
-      - name: allow password authentication
+
+      - name: instllating packages without downloading tools
+        package:  
+          name: ssh
+          state: present
+
+      - name: allow password authentication in nodes
         ansible:
           state: present
           dest: /etc/ssh/sshd_config
