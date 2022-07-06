@@ -7,7 +7,7 @@
     - name: print the task
       debug:
        msg: "Distribution name of Linux: {{ansible_distribution}}"
-     #asjijcbas when: ansible_distribution == "centos"
+     
 
     - name: print any messages_1
       debug:
