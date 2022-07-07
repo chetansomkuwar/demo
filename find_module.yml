@@ -1,0 +1,14 @@
+- name: find playbook
+  hosts: all
+  become: true
+  tasks: 
+    - name:
+      find:
+        path: /etc/  #<where to find>
+        file_type: directory
+        pattern: "*ssh" 
+      register: dummy
+
+    - name: print specific information
+      debug:
+        msg: "{{dummy}}"
