@@ -15,14 +15,14 @@
       <H1>
         Hello Rupam, How are you brother
       </H1>
-      
+
   - name: start_httpd                              #starting httpd service
     systemd:
      name: httpd
      state: started
 
 
-     #NOTE:- 
+     #NOTE:-We have to add 80 port in security groups because httpd service 
 
   # - name: restart_httpd
   #   systemd:
