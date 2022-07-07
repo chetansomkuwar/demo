@@ -12,12 +12,17 @@
      path: /var/www/html/index.html
      create: yes
      block: |
-      Hello Rupam, How are you brother
-
+      <H1>
+        Hello Rupam, How are you brother
+      </H1>
+      
   - name: start_httpd                              #starting httpd service
     systemd:
      name: httpd
      state: started
+
+
+     #NOTE:- 
 
   # - name: restart_httpd
   #   systemd:
