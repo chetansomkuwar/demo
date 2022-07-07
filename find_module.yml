@@ -4,7 +4,8 @@
   tasks: 
     - name:
       find:
-        path: /etc/  #<where to find>
+        path: /etc/
+        recurse: true  #<where to find>
         file_type: directory
         pattern: "*ssh" 
       register: dummy
