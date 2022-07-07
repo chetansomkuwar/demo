@@ -14,7 +14,7 @@
       - name: new task for file adding and it content
         lineinfile: 
           state: present    
-          dest: /mnt/spider.txt
+          dest: /mnt/thor.txt
           line: hello spider
 
 #Note: firstly we have to create spider.txt file in Node, after that run the playbook, it means line added in already created file.
