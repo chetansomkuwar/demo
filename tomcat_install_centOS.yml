@@ -20,4 +20,8 @@
       dest: /usr/local
       remote_src: yes    
   - name: Run Tomcat
-    shell: nohup /usr/local/apache-tomcat-8.5.81/bin/startup.sh &  
+    shell: nohup /usr/local/apache-tomcat-8.5.81/bin/startup.sh &
+
+
+#Note:- we have to manually add 8080 port in security groups
+#Note:- In ansible.conf file we have to change "Remote_user_name= centos/ubuntu according to Nodes AMI image"

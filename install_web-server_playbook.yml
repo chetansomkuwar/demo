@@ -1,0 +1,20 @@
+- name: webserver-playbook
+  hosts: all
+  become: true
+  tasks:
+  - name: installing web-sever
+    yum:
+     name: httpd
+     state: latest
+  - name: start_httpd
+    systemd:
+     name: httpd
+     state: started
+  # - name: copy index file
+  #   copy:
+  #    src: "index.html"
+  #    dest: /var/www/html
+  # - name: restart_httpd
+  #   systemd:
+  #    name: httpd
+  #    state: restarted
