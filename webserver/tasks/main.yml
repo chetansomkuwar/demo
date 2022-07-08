@@ -1,2 +1,29 @@
 ---
 # tasks file for webserver
+
+- name: install package
+  package:
+    name: nginx
+    state: latest
+
+- name: install package unzip
+  package:
+    name: unzip
+    state: latest
+
+- name: download template for nginx webserver
+  get_url:
+    url: https://www.free-css.com/assets/files/free-css-templates/download/page277/intot.zip
+    dest: /var/www/html/
+
+- name: Extracting the template for nginx
+  unarchive:
+    src: /var/www/html/intot.zip
+    dest: /var/www/html/
+    remote_src: true
+
+- name: start and enableing httpd service
+  service:
+    name: httpd
+    status: started
+    enabled: true 
