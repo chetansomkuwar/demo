@@ -1,0 +1,5 @@
+- name: Ngnix play book via using Role
+  hosts: all
+  become: true
+  roles:
+    - webserver
