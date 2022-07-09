@@ -1,5 +1,0 @@
-- name: tomcat play book via using Role
-  hosts: all
-  become: true
-  roles:
-    - tomcat_server
