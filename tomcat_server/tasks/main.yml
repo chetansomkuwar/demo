@@ -17,7 +17,7 @@
       dest: /mnt
 
 - name: extract the tomcat 8 link 
-  command: tar -xvzf apache-tomcat-8.5.81.tar.gz -C /mnt
+  command: tar -xvzf /mnt/apache-tomcat-8.5.81.tar.gz -C /mnt
 
 - name: upload the student web file into web app
   copy: 
