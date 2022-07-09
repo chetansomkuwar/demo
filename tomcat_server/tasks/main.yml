@@ -22,7 +22,7 @@
 - name: upload the student web file into web app
   copy: 
     src: /home/ubuntu/student.war 
-    dest: /mnt/apache-tomcat-8.5.81/webapp/
+    dest: /mnt/apache-tomcat-8.5.81/webapps/
 
 - name: start tomcat application servers
   command: /mnt/apache-tomcat-8.5.81/bin/catalina.sh start
